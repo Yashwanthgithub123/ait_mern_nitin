@@ -1,0 +1,19 @@
+{
+  "name": "ait_mern_nitin",
+  "version": "1.0.0",
+  "description": "\"person project for crud operation\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yashwanthgithub123/ait_mern_nitin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yashwanthgithub123/ait_mern_nitin/issues"
+  },
+  "homepage": "https://github.com/Yashwanthgithub123/ait_mern_nitin#readme"
+}
