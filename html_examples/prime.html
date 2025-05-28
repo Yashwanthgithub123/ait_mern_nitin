@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Prime Number</title>
+    <style>
+        div>div {
+            margin: 10px;
+        }
+
+        label {
+            width: 200px;
+        }
+
+        button {
+            width: 120px;
+            background-color: orange;
+            height: 30px;
+            border: 2px solid darkred;
+            border-radius: 10px;
+            margin-left: 80px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label for="inputNumber"> Input Number </label>
+            <input type="text" id="inputNumber">
+        </div>
+        <label for="output"> Is Prime </label>
+        <input type="text" id="output">
+        <div>
+            <button onclick="checkPrime()"> Check Prime </button>
+        </div>
+    </div>
+    <script>
+        function checkPrime() {
+            number = parseInt(document.getElementById(inputNumber))
+            isPrime = true
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false
+                    break
+                }
+            }
+            if (isPrime)
+                document.getElementById("output").innerText = "Yes"
+            else
+                document.getElementById("output").innerText = "No"
+        }
+    </script>
+</body>
+
+</html>
